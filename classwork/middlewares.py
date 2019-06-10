@@ -50,6 +50,7 @@ class ClassworkSpiderMiddleware(object):
 
         # Must return only requests (not items).
         for r in start_requests:
+            print("request is:",r)
             yield r
 
     def spider_opened(self, spider):
